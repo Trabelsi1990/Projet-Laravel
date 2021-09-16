@@ -1,0 +1,505 @@
+#search-bar{
+    transition: all 0.5s;
+    display: flex;
+    width: 0px;
+    overflow: hidden;
+ 
+}
+#search-bar.search-visible{
+    transition: all 0.5s;
+    width: 280px;
+}
+#search-on.search-visible{
+    transition: all 0.3s;
+    width: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+#search-on{
+    transition: all 0.3s;  
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+
+}
+
+.nav {
+    flex: 1;
+    margin: 0px;
+    background: black;
+}
+
+#burger {
+    display: none;
+}
+
+.main-menu {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    color: white;
+}
+
+.menu-level-1 {
+    position: relative;
+    display: block;
+    flex-grow: 1;
+
+}
+
+.menu-level-1:hover .sub-menu {
+    display: block;
+}
+
+.nav-item {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    color: white;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background-color: rgb(206, 206, 206);
+    transition: all 0.5s ease;
+}
+
+.sub-menu {
+    position: absolute;
+    list-style: none;
+    z-index: 10;
+    padding: 0%;
+    left: 0%;
+    display: none;
+    background-color: black;
+}
+
+.sub-menu a {
+    color: white;
+}
+
+.propos-1{
+    display: flex;
+    justify-content: space-between; 
+}
+.p-propos-1{
+    margin-top: 2rem;
+    font-size: 20px;
+    width: 28%;
+    text-align: left;
+    
+    margin-left: 13rem;
+    line-height: 2.3rem;
+}
+.img-propos{
+    width: 320px;
+    height: 490px;
+}
+.div-eve-2{
+    min-width: 70%;
+    display: flex;
+    flex-direction: column-reverse;
+ }
+ .img{
+    width:100%;
+    height: 100%;
+    text-align: center; 
+ 
+ }
+ .div-ext-art{
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+ }
+ .img-art{
+    width:30%;
+    text-align: right;
+    height: 30%; 
+ }
+body {
+    min-height: 100%;
+}
+
+footer {
+    background-color: black;
+    line-height: 60px;
+    margin-bottom: 0%;
+    height: 0%;
+    width: 100%;
+    /* height:60px; */
+    text-align: center;
+    color: white;
+    min-height: 0%;
+}
+
+.mainn {
+    min-height: 100%;
+}
+
+.p {
+    color: wheat;
+}
+
+.card-img-top {
+ 
+    object-fit: cover;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+
+.p {
+    display: block;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+.div-img{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width : 600px) {
+    #search-on{
+       position: absolute;
+       right: 0;
+    }
+    .head {
+        height: 13vh;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10vh;
+    }
+
+    .li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .dropdown-item {
+        text-align: center;
+    }
+
+    .sub-menu {
+        text-align: center;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        color: white;
+    }
+
+    .navbar-collapse {
+        background: black;
+        width: 100%;
+        color: white;
+        margin-top: 42px;
+        margin-left: -58px;
+    }
+
+    .nav {
+        flex: 1;
+        margin: 0px;
+        background: white;
+    }
+
+    #burger {
+        justify-content: left;
+
+    }
+    
+    .navbar {
+        padding-top: 10px;
+        background: none;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .div-img {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .div-img-art {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-img-eve {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-event{
+        width: 100%;
+    }
+
+    .div-eve-2 {
+        min-width: auto;
+            display: flex;
+            flex-direction: column-reverse;
+    }
+    .propos-1 {
+        flex-direction: column-reverse;
+        display: flex;
+        margin-bottom:2rem;
+        justify-content : space-between;
+        margin-right:1rem;
+        width: 100%;
+    }
+    .p-propos-1{
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .propos-2 {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .propos-3 {
+        /* display: flex; */
+        flex-direction: column-reverse;
+    }
+    .div-text{
+      text-align: center;
+    }
+    .img{
+        width:80%;
+        text-align: center; 
+        margin-left : 3rem;
+     }
+     .div-ext-art{
+        align-items: center;
+     }
+     .img-art{
+        width: 100%;
+     }
+}
+
+@media only screen and (max-width: 768px) and (min-width:601px) {
+    .collapse:not(.show) {
+        display: flex;
+    }
+/* .propos-1{
+    display: flex;
+    margin-bottom:2rem;
+    justify-content : space-between;
+    margin-right:1rem;
+} */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        flex-basis: auto;
+    }
+    .navbar-collapse {
+        background: black;
+        justify-content: space-between;
+        flex-basis: auto;
+    }
+    #search-bar{
+        position: absolute;
+        right: 0;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0px;
+        color: white;
+    }
+    .menu-level-1 {
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+    }
+    .img-event{
+        width: 90%;
+        height: auto;
+    }
+    .div-img-eve{
+        flex-direction: column;
+    }
+    .div-eve-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .div-text{
+        text-align: center;
+    }
+    .img{
+        width:80%;
+        text-align: center; 
+        margin-left : 3rem;
+     }
+     .img-art{
+         width: 50%;
+         height: 50%;
+     }
+     .div-img{
+         flex-direction: column-reverse;
+     }
+     .p-propos-1{
+      margin-left: -1rem;
+      justify-content: space-between;
+     }
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+
+    /* .div-logo{
+                position : relative;
+                display:flex;
+                align-items:center;
+                flex-direction: column;
+                justify-content:space-between;
+                height:10vh;
+            } */
+    .li a {
+        text-decoration: none;
+        color: black;
+        flex-direction: row;
+    }
+
+    .dropdown-item {
+        text-align: center;
+    }
+
+    .sub-menu {
+        text-align: center;
+    }
+
+    .main-menu {
+
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        color: white;
+    }
+
+    .menu-level-1 {
+        position: relative;
+        display: block;
+        flex-grow: 1;
+
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        background: black;
+        color: white;
+        flex-basis: auto;
+    }
+
+    .collapse:not(.show) {
+        display: flex;
+    }
+    .navbar {
+        justify-content: space-between;
+        margin-top: 2.5rem;
+        display: flex;
+    }
+
+    .div-img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div-img-art {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-img-eve {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-event{
+        width:100%
+    }
+
+    .div-eve-2 {
+        min-width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .div-text{
+        text-align: center;
+    }
+    .img{
+        width:80%;
+        text-align: center; 
+        margin-left : 4.5rem;
+     }
+     .p-propos-1{
+         width: 100%;
+         margin-left: 5rem;
+     }
+
+}
+
+/* .div-logo{
+            position : relative;
+            display:flex;
+            align-items:center;
+            flex-direction: column;
+            justify-content:space-between;
+            height:15vh;
+       
+        } */
+
+/* #btn {background-color:black;
+            border-radius : 10px ;
+        }  */
+
+/* .center-top{
+            position : absolute;
+            align-content:center;
+            top:8px;
+            height:15vh;
+        } */
+/* .top-left{
+            position : absolute;
+            left:10px;
+            top:1px;
+        } */
+/* .head{
+            height:20vh;
+        } */
